@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terreno Premium 20.000m² | Xanxerê - Oportunidade Exclusiva</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s) }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1981682976017474'); fbq('track', 'PageView'); fbq('track', 'Contact');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1981682976017474&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <style>
+        :root {
+            --primary: #0f172a;
+            --primary-light: #1e293b;
+            --accent: #f59e0b;
+            --accent-hover: #d97706;
+            --text-light: #f8fafc;
+            --text-dark: #334155;
+            --text-muted: #64748b;
+            --surface: #ffffff;
+            --surface-glass: rgba(255, 255, 255, 0.9);
+            --gradient-hero: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.9) 100%);
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Utility Classes */
+        .text-accent {
+            color: var(--accent);
+        }
+
+        .text-primary {
+            color: var(--primary);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem;
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+
+        .mb-12 {
+            margin-bottom: 3rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2.5rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1.125rem;
+            border-radius: 9999px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, var(--accent), var(--accent-hover));
+            color: white;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+            filter: brightness(1.1);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Header / Hero */
+        .header {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .header-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw27NsnKzYf_wpZoRsN0M_aMCoIo6r6GRQJ0AjcYkJ2PzqitUe2tG8HU2ZIceB-7XHOSoewtpQ-UR0cwTUpdLhf3RhaWlOao25SHo4tipCHHQEVg3tKKXBDtX-K__bP83hjePHpXz_-QZvSSL7hdBxkYNaVGpw8DftTBEz1ADK5a3qLd4/s1600/retouch_2025092201395749.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -2;
+            animation: zoomSlow 20s infinite alternate;
+        }
+
+        @keyframes zoomSlow {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.1);
+            }
+        }
+
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-hero);
+            z-index: -1;
+        }
+
+        .header-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .header-badge {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .header h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            margin-bottom: 2.5rem;
+            color: #cbd5e1;
+            font-weight: 300;
+        }
+
+        .header-stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-value {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+            color: white;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 6rem 0;
+            position: relative;
+            background: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            border: 1px solid #f1f5f9;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: var(--primary);
+            transition: height 0.3s ease;
+            z-index: -1;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .feature-card:hover::before {
+            height: 100%;
+        }
+
+        .feature-card:hover h3,
+        .feature-card:hover p,
+        .feature-card:hover .feature-icon {
+            color: white;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            transition: color 0.3s;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            transition: color 0.3s;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 6rem 0;
+            background: #f8fafc;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(2, 300px);
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item:nth-child(1) {
+            grid-column: span 8;
+        }
+
+        .gallery-item:nth-child(2) {
+            grid-column: span 4;
+        }
+
+        .gallery-item:nth-child(3) {
+            grid-column: span 4;
+        }
+
+        .gallery-item:nth-child(4) {
+            grid-column: span 4;
+        }
+
+        .gallery-item:nth-child(5) {
+            grid-column: span 4;
+        }
+
+        @media (max-width: 992px) {
+            .gallery-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .gallery-item {
+                height: 250px;
+            }
+        }
+
+        /* Location Section */
+        .location {
+            padding: 6rem 0;
+            background: white;
+        }
+
+        .location-container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .location-list {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .location-list li {
+            padding: 1rem 0;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .location-list li:last-child {
+            border-bottom: none;
+        }
+
+        .location-list i {
+            color: var(--accent);
+            font-size: 1.25rem;
+            width: 24px;
+        }
+
+        .map-wrapper {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            height: 500px;
+        }
+
+        .map-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .map-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .map-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        /* Potential Section */
+        .potential {
+            padding: 6rem 0;
+            background: var(--primary);
+            color: white;
+            text-align: center;
+        }
+
+        .potential h2 {
+            color: white;
+        }
+
+        .potential .section-subtitle {
+            color: #94a3b8;
+        }
+
+        .potential-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .potential-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .potential-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .potential-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 8rem 0;
+            background: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 4rem;
+            border-radius: 32px;
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-content::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .contact-methods {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            background: #f1f5f9;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+            background: #e2e8f0;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .location-container {
+                grid-template-columns: 1fr;
+            }
+
+            .header-stats {
+                gap: 1rem;
+            }
+
+            .stat-item {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+
+            .cta-content {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Hero -->
+    <header class="header">
+        <div class="header-bg"></div>
+        <div class="header-overlay"></div>
+        <div class="container header-content">
+            <span class="header-badge">Oportunidade Exclusiva</span>
+            <h1>Terreno Premium em <span class="text-accent">Xanxerê</span></h1>
+            <p>Um investimento estratégico de 20.000m² com potencial ilimitado de desenvolvimento e valorização
+                garantida.</p>
+
+            <div class="header-stats">
+                <div class="stat-item">
+                    <span class="stat-value">20.000 m²</span>
+                    <span class="stat-label">Área Total</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">100m</span>
+                    <span class="stat-label">Frente Asfalto</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">6 min</span>
+                    <span class="stat-label">Do Centro</span>
+                </div>
+            </div>
+
+            <a href="#contato" class="btn btn-primary">
+                Agendar Visita <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Galeria -->
+    <section class="gallery">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="section-title">Visualização Aérea</h2>
+                <p class="section-subtitle">Explore cada ângulo desta propriedade excepcional e visualize seu projeto
+                    ganhando vida.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibVfSoKR6Og71UXXHgCHNpy-_Zg09Ngiujv03XJmLMrLNZOPuggq_GTGzJ-QHZAzokKVYZKI16ipYOk9Fh32Do7nEfkiMo6g-rkIL5GDPlWvjL5EeCbTGZHqo7l5K5ghzoRu2tdQFekMH86n_uTCfzIZlhOxV6Y2SJqeY3avL_qPwLhvU/s1600/retouch_2025092201344547.jpg"
+                        alt="Vista Aérea Principal">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO8p7AXvxqtlaoommEOvPqdl5KeJ3cK8pEzres8rq9hLY8LB8rzyswnMuzpnq2APACAwLLOqj54K9oURMk2UbgwAKdZO-vO7YXRillzQJcygFs08BSbAOXXjOrXyNmPee1snxXTXWAI4iR_EpBIZG_lIyznfH4PN-Y4BlUwpg2jTuHNMg/s1600/retouch_2025092201374807.jpg"
+                        alt="Detalhe do Terreno">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9gkPq2vYdLtvyTZB3yHsXvGTaeZv6cQMN5BkR_3bul4LpHislb5OhVQcdo43H00oQd2NCmMCFe9tuU4GSicMqk-MD-_-zSll5QA1oCwjak8pPZ-RwU6RohFO9lXZYIm5JbaGpGc3gLzz_5gZcpMVTlHDpqJvon-S6rJIXQo3q7gdswKc/s1600/retouch_2025092201405591.jpg"
+                        alt="Vista Lateral">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmaQgFP0wcnaZpdXrlEkl4GsWv02q87k1baXNyvSVFTjt-Im0My1oE0LUaKEoFYxJQ6KdSnYV-rg5OH3g0vrjXpceW0fgrkJiUdtVc9bH1lHnXWRKthYuzEfaSE4sNvEHYEPbMZfsOLu5wHTNcfgb3jGGXFRZDfLL2NySfsswmMizrdTA/s1600/retouch_2025092201282768.jpg"
+                        alt="Perspectiva">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw27NsnKzYf_wpZoRsN0M_aMCoIo6r6GRQJ0AjcYkJ2PzqitUe2tG8HU2ZIceB-7XHOSoewtpQ-UR0cwTUpdLhf3RhaWlOao25SHo4tipCHHQEVg3tKKXBDtX-K__bP83hjePHpXz_-QZvSSL7hdBxkYNaVGpw8DftTBEz1ADK5a3qLd4/s1600/retouch_2025092201395749.jpg"
+                        alt="Vista Panorâmica">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section class="features">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="section-title">Diferenciais Competitivos</h2>
+                <p class="section-subtitle">Muito mais que um terreno, uma oportunidade de negócio com características
+                    únicas.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-ruler-combined"></i></div>
+                    <h3>Dimensões Generosas</h3>
+                    <p>20.000m² de área plana com 100 metros de frente para via asfaltada, permitindo múltiplos tipos de
+                        projetos e fácil acesso.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-compass"></i></div>
+                    <h3>Localização Estratégica</h3>
+                    <p>Situado no Bairro Frederico Ferrionato, a apenas 6 minutos do centro de Xanxerê, combinando
+                        tranquilidade e conveniência.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-file-contract"></i></div>
+                    <h3>100% Regularizado</h3>
+                    <p>Documentação impecável com IPTU em dia. Pronto para transferência imediata e sem burocracias
+                        complexas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Alto Potencial</h3>
+                    <p>Área em franca expansão com novos loteamentos vizinhos, garantindo valorização constante do seu
+                        patrimônio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização -->
+    <section class="location">
+        <div class="container location-container">
+            <div class="location-info">
+                <h2 class="section-title" style="margin-bottom: 2rem; display: block; text-align: left;">Localização
+                    Privilegiada</h2>
+
+                <ul class="location-list">
+                    <li><i class="fas fa-map-marker-alt"></i> Bairro Frederico Ferrionato - CEP 89820-000</li>
+                    <li><i class="fas fa-road"></i> Frente para Asfalto Principal</li>
+                    <li><i class="fas fa-landmark"></i> Próximo à Sociedade Alternativa</li>
+                    <li><i class="fas fa-futbol"></i> Vizinho à Arena Gordo</li>
+                    <li><i class="fas fa-broadcast-tower"></i> Perto da Rádio Princesa</li>
+                    <li><i class="fas fa-building"></i> Ao lado de novo loteamento</li>
+                </ul>
+
+                <p class="mb-6" style="margin-top: 2rem; color: var(--text-muted);">
+                    Uma região em desenvolvimento acelerado, perfeita para quem busca investir com segurança e retorno
+                    garantido.
+                </p>
+
+                <a href="#contato" class="btn btn-primary">
+                    Ver no Google Maps <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+
+            <div class="map-wrapper">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFOZw11pzRwAdHOOfZAs5iLWUxGgoJtW7IvhRUu8TFOZeuRqliwUShvLwLfXcr_ilDEl9RDLZh7UMDsMNx7D_mLwjsiIi_0eTBH8EM43kIiq4hbCUqf1LEuQjgKjIra0BTyKJnDsZmysMjgAUKXus2-HRAuIBY3vNUryTtInQgS2wmEFk/s1600/Inserir%20um%20t%C3%ADtulo.png"
+                    alt="Mapa de Localização">
+                <div class="map-overlay">
+                    <div class="map-icon"><i class="fas fa-map-pin"></i></div>
+                    <div>
+                        <strong>Xanxerê, SC</strong>
+                        <div style="font-size: 0.8rem; color: #666;">Localização Aproximada</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Potencial -->
+    <section class="potential">
+        <div class="container">
+            <h2 class="section-title" style="color: white; margin-bottom: 3rem;">O Que Você Pode Construir?</h2>
+
+            <div class="potential-grid">
+                <div class="potential-card">
+                    <span class="potential-icon">🏭</span>
+                    <h3>Polo Industrial</h3>
+                    <p>Topografia e acesso ideais para instalação de galpões logísticos ou plantas industriais.</p>
+                </div>
+                <div class="potential-card">
+                    <span class="potential-icon">🏘️</span>
+                    <h3>Condomínio</h3>
+                    <p>Perfeito para lotamentos residenciais fechados, atendendo à demanda da região.</p>
+                </div>
+                <div class="potential-card">
+                    <span class="potential-icon">🌾</span>
+                    <h3>Agro Business</h3>
+                    <p>Espaço amplo e apropriado para projetos de agronegócio e pecuária de precisão.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section id="contato" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="section-title">Não Deixe Essa Oportunidade Passar</h2>
+                <p class="section-subtitle">Imóveis como este não ficam disponíveis por muito tempo. Entre em contato
+                    agora e faça um excelente negócio.</p>
+
+                <div class="contact-methods">
+                    <a href="https://wa.me/5547991669005" target="_blank" class="contact-item">
+                        <i class="fab fa-whatsapp" style="color: #25D366; font-size: 1.5rem;"></i>
+                        (47) 99166-9005
+                    </a>
+                    <a href="mailto:asvhenry@gmail.com" class="contact-item">
+                        <i class="far fa-envelope" style="color: #EA4335; font-size: 1.5rem;"></i>
+                        asvhenry@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Javascript for simple interactions -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple reveal on scroll
+        const observeElements = document.querySelectorAll('.feature-card, .gallery-item, .potential-card');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        // Add initial styles for animation
+        observeElements.forEach(el => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+
+</html>

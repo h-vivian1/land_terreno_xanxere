@@ -170,8 +170,8 @@
         /* Header / Hero */
         .header {
             position: relative;
-            height: 100vh;
-            min-height: 600px;
+            min-height: 100vh;
+            padding: 2rem 0;
             display: flex;
             align-items: center;
             color: white;
@@ -222,28 +222,28 @@
         .header-badge {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
-            padding: 0.5rem 1.5rem;
+            padding: 0.4rem 1.2rem;
             border-radius: 9999px;
             border: 1px solid rgba(255, 255, 255, 0.2);
-            font-size: 0.875rem;
+            font-size: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 2px;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             display: inline-block;
             color: var(--accent);
             font-weight: 600;
         }
 
         .header h1 {
-            font-size: clamp(2.5rem, 5vw, 4.5rem);
-            margin-bottom: 1.5rem;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            margin-bottom: 0.5rem;
             letter-spacing: -0.02em;
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
 
         .header p {
-            font-size: clamp(1.1rem, 2vw, 1.5rem);
-            margin-bottom: 2.5rem;
+            font-size: clamp(1rem, 1.5vw, 1.25rem);
+            margin-bottom: 1.5rem;
             color: #cbd5e1;
             font-weight: 300;
         }
@@ -251,29 +251,29 @@
         .header-stats {
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            gap: 1.5rem;
             flex-wrap: wrap;
-            margin-bottom: 2.5rem;
+            margin-bottom: 1.5rem;
         }
 
         .stat-item {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(5px);
-            padding: 1rem 2rem;
+            padding: 0.75rem 1.5rem;
             border-radius: 12px;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .stat-value {
             display: block;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-weight: 700;
             font-family: 'Outfit', sans-serif;
             color: white;
         }
 
         .stat-label {
-            font-size: 0.875rem;
+            font-size: 0.75rem;
             color: #94a3b8;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -640,8 +640,7 @@
         <div class="header-bg"></div>
         <div class="header-overlay"></div>
         <div class="container header-content">
-            <span class="header-badge">Oportunidade Exclusiva</span>
-            <h1>Terreno Premium em <span class="text-accent">Xanxerê</span></h1>
+            <h1 style="margin-top: 1rem;">Terreno Premium em <span class="text-accent">Xanxerê</span></h1>
             <p>Um investimento estratégico de 20.000m² com potencial ilimitado de desenvolvimento e valorização
                 garantida.</p>
 
@@ -660,7 +659,16 @@
                 </div>
             </div>
 
-            <a href="#contato" class="btn btn-primary">
+            <div class="video-container"
+                style="position: relative; aspect-ratio: 16/9; max-width: 900px; width: 100%; margin: 0 auto 3rem auto; background: #000; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-xl); border: 1px solid rgba(255,255,255,0.2);">
+                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                    src="https://www.youtube.com/embed/5zd5Qu58juQ?si=7Jw0gcvONk2MyLP8" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <a href="#contato" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.125rem;">
                 Agendar Visita <i class="fas fa-arrow-right"></i>
             </a>
         </div>
@@ -759,7 +767,7 @@
                     garantido.
                 </p>
 
-                <a href="#contato" class="btn btn-primary">
+                <a href="https://maps.app.goo.gl/81WnhVb3y9Ruzi5p8" target="_blank" class="btn btn-primary">
                     Ver no Google Maps <i class="fas fa-external-link-alt"></i>
                 </a>
             </div>
